@@ -1,6 +1,8 @@
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
+// Program computes the BMI of a person by using the weight (in pounds) and height (in inches) from console input
+
 public class BMI {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
