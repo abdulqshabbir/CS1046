@@ -1,3 +1,4 @@
+package lab1;
 // Program says welcome message to the console output
 
 class Welcome {
