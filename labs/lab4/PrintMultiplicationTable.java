@@ -4,21 +4,14 @@ public class PrintMultiplicationTable {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Please enter an integer: ");
+        System.out.print("\nPlease enter an integer: ");
         int x = input.nextInt();
         input.close();
 
-        System.out.println("\nMultiplication Table: \n");
+        System.out.println("\nMultiples for the number " + x + ":");
 
-        for (int i = 1; i <= 12; i++) {
-            System.out.printf("%5s", i);
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i * x);
         }
-
-        System.out.println("");
-        for (int i = 1; i <= 12; i++) {
-            System.out.printf("%5d", i * x);
-        }
-
-        System.out.println("");
     }
 }

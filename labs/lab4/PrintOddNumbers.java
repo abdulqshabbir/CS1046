@@ -4,7 +4,7 @@ public class PrintOddNumbers {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Please enter an integer n: ");
+        System.out.print("Enter the value of n: ");
         int n = input.nextInt();
         input.close();
 
@@ -14,13 +14,11 @@ public class PrintOddNumbers {
         }
 
         int sum = 0;
-        for (int i = 1; i <= n; i++) {
-            if (i % 2 == 1) {
-                System.out.print(i + " ");
-                sum += i;
-            }
+        for (int i = 1; i <= n; i += 2) {
+            System.out.println(i);
+            sum += i;
         }
 
-        System.out.println("\nSum of odd integers is: " + sum);
+        System.out.println("Sum is: " + sum);
     }
 }
